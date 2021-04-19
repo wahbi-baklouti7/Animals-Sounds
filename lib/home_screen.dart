@@ -7,7 +7,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  
   Card animalCard(String animalName) {
     return Card(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
@@ -31,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
               color: Colors.black,
               fontSize: 20,
               fontWeight: FontWeight.bold,
-              letterSpacing: 1.3),
+              letterSpacing: 1.2),
         )
       ]),
     );
@@ -56,8 +55,8 @@ class _HomeScreenState extends State<HomeScreen> {
         body: GridView.count(
           primary: true,
           crossAxisCount: 2,
-          crossAxisSpacing: 5,
-          mainAxisSpacing: 5,
+          crossAxisSpacing: 1,
+          mainAxisSpacing: 1,
           padding: EdgeInsets.all(10),
           children: [
             animalCard("Elephant"),
@@ -68,6 +67,8 @@ class _HomeScreenState extends State<HomeScreen> {
             animalCard("Whale"),
             animalCard("Wolf"),
             animalCard("Panther"),
+            animalCard("Cow"),
+            animalCard("Zebra"),
           ],
         ));
   }
